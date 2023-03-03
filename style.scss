@@ -1,0 +1,170 @@
+/* see the brand guide for colors, fonts, and images in CodePen: 
+https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing */
+
+h1{
+  font-size:calc(24px + 24px);
+  font-family: 'Poppins', sans-serif;
+}
+h2{
+  
+  font-family: "Poppins", sans-serif;
+  }
+p{
+  font-family: 'Lato', sans-serif;
+}
+
+.header{
+  background-color:#082B59;
+}
+
+.footer{
+  background-color:#082B59;
+}
+
+.logo{
+  width:120px;
+  display: block;
+  margin: 0 auto;
+}
+
+a{
+  color:white;
+  font-family: 'Lato', sans-serif;
+  text-decoration:none;
+}
+
+.navigation{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.navigation > div{
+  width: 120px;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.fa-solid{
+  color:white;
+  margin-right:5px;
+}
+
+.divider{
+  height:10px;
+  width:100%;
+  background-color:#D98555;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width:1000px;
+  margin:0px auto;
+}
+
+.card{
+  background-color:#59331D;
+  width:300px;
+  border-radius: 25px;
+}
+
+.cardimg{
+  width:100%;
+  border-radius: 25px 25px 0 0;
+}
+
+.card p{
+  color:white;
+  margin:15px;
+}
+.button {
+  background: #59331D;
+  color: white;
+  font-size: 18px;
+  width: 130px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+}
+.bottom{
+  text-align:center;
+  color:white;
+}
+.mobileimg{
+  height: 300px;
+}
+.carming{
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+
+.mobileimg{
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_oAJ-mCT-HQEvmnVd95POZWWHYM4KLsGaqi_BJ2l9VETE8s0ROFcKP17efdzh2fh3GF8&usqp=CAU");
+  height: 300px;
+  border-radius: 25px 25px 0 0;
+ background-position: center bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+  
+  .cardimg{
+    display:none;
+  }
+  
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  gap: 40px;
+  max-width:1000px;
+  margin:0px auto;
+}
+  
+  .card{
+    width:100%;
+  }
+  
+  .button{
+    width:100%;
+  }
+  
+  h1{
+    text-align:center;
+    font-size:32px;
+  }
+  
+  p{
+    text-align:center;
+    font-size: 14px;
+  }
+  
+}
+
+
+$fontsize: 18px;
+
+h2{
+  font-size: $fontsize + $fontsize;
+font-family: "Poppins", sans-serif;
+}
+
+@mixin iamsassay{
+  color: red;
+  background-color: black;
+}
+
+h1{
+  @include iamsassay;
+}
+
+@mixin crazyspacing($martin,$patrick) {
+  margin:$martin;
+  padding:$patrick;
+}
+
+h1{
+  @include crazyspacing(200px,200px);
+}
